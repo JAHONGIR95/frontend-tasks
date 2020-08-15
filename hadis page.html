@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<title>Cloud.html</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="css/w3.css">
+<style>
+    .mySlides {
+        display: none;
+    }
+
+    .w3-left,
+    .w3-right {
+        cursor: pointer
+    }
+
+    .w3-left,
+    .w3-right {
+        position: absolute;
+        display: block;
+        font-size: 20px;
+        color: #fff;
+        background-color: #000;
+        border-radius: 50%;
+        padding: 15px 25px;
+        background-color: rgba(0, 0, 0, 0.25);
+        opacity: 0;
+        transition: .3s ease-out;
+    }
+
+    .w3-right {
+        right: 0;
+    }
+
+    .w3-left {
+        left: 0;
+    }
+
+    .w3-left:hover,
+    .w3-right:hover {
+        background-color: #1da717;
+        opacity: .6;
+    }
+
+    .w3-badge {
+        height: 15px;
+        width: 15px;
+        padding: 0;
+        opacity: 0;
+        transition: all .5s;
+        cursor: pointer;
+    }
+
+    .w3-badge:active {
+        background-color: #fff;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="w3-container w3-text-white w3-display-bottommiddle" style="width:100%">
+            <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        </div>
+        <div class="slide">
+            <div class="mySlides fade">
+                <div class="header">
+                    <div class="img-wrapper">
+                        <img src="images/banner2-bg.jpg" style="width:100%">
+                        <div class="image-2"><img src="images/munajat.png" alt=""></div>
+                        <div class="text">
+                            <h1><b>«Nabiy Sollallohu Alayhi Vasallam:</b></h1>
+                            <p>«Kim <b>namoz</b>ni unutsa, bas, uni eslagan paytida oʼqib olsin. Uning bundan boshqa
+                                kafforoti yoʼqdir. «<b>Namoz</b>ni Mening zikrim uchun qoim qil», dedilar».</p>
+                        </div>
+                        <nav class="bosh-sahifa-utish">
+                            <ul>
+                                <li>
+                                    <a href="#">Saytga Kirish</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+
+        
+        </div>
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottom" style="width:100%">
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-white";
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+<!--
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<div class="w3-container">
+  
+</div>
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="images/bg3.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    French Alps
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img_lights.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Northern Lights
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img_mountains.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Beautiful Mountains
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img_forest.jpg" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    The Rain Forest
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img_mountains.jpg" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Mountains!
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body></html>
+
+-->

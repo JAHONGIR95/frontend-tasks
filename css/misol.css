@@ -1,0 +1,114 @@
+ul {
+    margin: 50px;
+}
+
+ul li {
+    border: 1px solid #1da717;
+    border-radius: 3px;
+    width: 100px;
+    height: 40px;
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+
+    background: linear-gradient(to right, #1da717 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position .5s ease-out;
+}
+
+ul li:hover {
+    background-position: left bottom;
+}
+
+ul li a {
+    text-align: center;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 40px;
+    color: #1da720;
+    transition: color .6s ease-out;
+    display: block;
+}
+
+ul li a:hover {
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 260px;
+}
+
+/*
+.btn {
+    border: 1px solid #3498db;
+    background-color: ;
+    padding: 10px;
+    font-size: 20px;
+    transition: all .7s ease-in-out;
+    position: relative;
+    overflow: hidden;
+        
+}
+
+.btn1 {
+    color: #2978ad;
+    
+}
+
+.btn1:hover {
+    color: #fff;
+    overflow: visible;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #3498db;
+    color: #fff;
+    z-index: -1;
+    transition: all .7s ease;
+}
+
+.btn1::before {
+    top: 0;
+}
+
+.btn1:hover::before{
+    width: 100%;
+}
+
+*/
+/*------------------------------------------*/
+
+/*
+.container {
+    
+}
+
+li {
+    list-style: none;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: lighter;
+    padding: 5px;
+}
+
+*/

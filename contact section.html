@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>menu</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/herader.css">
+</head>
+
+<body>
+    <header>
+        <nav class="group">
+            <a href="#" class="logo"><img id='logo' src="images/icon.png" style="width: 30px; margin-top: -10px; margin-right: -10px; margin-left: 5px" alt="logo"></a>
+            <ul class="group">
+                <li> <a href="index.php">Home</a> </li>
+                <li> <a href="#">Portfolio</a> </li>
+                <li> <a href="#">About us</a> </li>
+                <li> <a href="#">Contact</a> </li>
+            </ul>
+            <div class="button group">
+                <form class="" action="includes/login.php" method="post">
+                    <input type="text" name="mailuid" placeholder="Username or Email ...">
+                    <input type="password" name="pwd" placeholder="Password...">
+                    <button type="submit" name="login-submit">Login</button>
+
+                    <a id="signup" href="signup.php">Sigh Up!</a>
+
+
+                    <button type="submit" name="logout-submit">Log out</button>
+
+                </form>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main class="main">
+        <div class="wrapper-main">
+            <section class="section-default">
+                <h1>Sign Up</h1>
+                <form class="form-signup" action="includes/signup.inc.php" method="post">
+                    <input type="text" name="uid" placeholder="Username">
+                    <input type="text" name="mail" placeholder="E-mail">
+                    <input type="password" name="pwd" placeholder="Password">
+                    <input type="password" name="pwd-repeat" placeholder="Repeat password">
+                    <button type="submit" name="signup-submit">Sign Up!</button>
+
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
